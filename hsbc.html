@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSBC Selector - Home</title>
+    <style>
+      /* --- 全局样式 --- */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #333; /* 默认文本颜色，可在背景上可见 */
+
+        /* --- 背景图片设置 --- */
+        background-image: url('_DSC0186-已增强-NR.jpg'); /* !!! 图片文件名 !!! */
+        background-size: cover; /* 让背景图片覆盖整个区域，可能会裁剪 */
+        background-repeat: no-repeat; /* 背景图片不重复 */
+        background-attachment: fixed; /* 背景图片固定，不随页面滚动 */
+        background-position: center center; /* 背景图片居中显示 */
+      }
+
+      /* --- 容器样式，用于居中内容并提供半透明背景 --- */
+      .container {
+        max-width: 900px; /* 最大宽度 */
+        margin: 30px auto; /* 顶部、底部30px，左右自动居中 */
+        padding: 25px;
+        background-color: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+        border-radius: 10px; /* 圆角 */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+      }
+
+      /* --- 标题样式 --- */
+      h1, h2 {
+        color: #0056b3; /* 蓝色标题 */
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      h2 {
+        font-size: 1.8em;
+        border-bottom: 2px solid #eee; /* 底部细线 */
+        padding-bottom: 10px;
+        margin-top: 30px;
+      }
+
+      /* --- 段落和列表样式 --- */
+      p {
+        margin-bottom: 15px;
+      }
+
+      ul {
+        list-style: none; /* 移除默认列表点 */
+        padding: 0;
+      }
+
+      li {
+        background-color: #f9f9f9;
+        margin-bottom: 10px;
+        padding: 12px 15px;
+        border-radius: 5px;
+        border-left: 4px solid #007bff; /* 左侧蓝色边框 */
+        display: flex; /* 使用Flexbox让链接右对齐 */
+        justify-content: space-between; /* 文本和链接分开 */
+        align-items: center; /* 垂直居中对齐 */
+      }
+      li a {
+        color: #007bff; /* 链接颜色 */
+        text-decoration: none; /* 移除下划线 */
+        font-weight: bold;
+      }
+      li a:hover {
+        text-decoration: underline; /* 鼠标悬停时显示下划线 */
+      }
+
+      /* --- 分隔线样式 --- */
+      hr {
+        border: 0;
+        height: 1px;
+        background-color: #ddd;
+        margin: 30px 0;
+      }
+
+      /* --- 表单样式 --- */
+      form label {
+        display: block; /* 标签独占一行 */
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      form input[type="text"],
+      form input[type="email"],
+      form textarea {
+        width: calc(100% - 20px); /* 宽度减去padding */
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* 确保padding和border包含在宽度内 */
+      }
+
+      form textarea {
+        resize: vertical; /* 允许垂直方向调整大小 */
+      }
+
+      form button {
+        background-color: #28a745; /* 绿色按钮 */
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1em;
+        transition: background-color 0.3s ease; /* 鼠标悬停动画 */
+      }
+
+      form button:hover {
+        background-color: #218838;
+      }
+
+      /* --- 页脚样式 --- */
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        color: #666;
+      }
+      footer img {
+        margin-top: 15px;
+        display: block; /* 使图片独占一行 */
+        margin-left: auto; /* 左右自动居中 */
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to HSBC Selector</h1>
+        <p>Your guide to the best of HSBC's international banking services.</p>
+        <hr>
+      </header>
+
+      <main>
+        <section id="products">
+          <h2>Our Websites</h2>
+          <p>Explore our banking solutions by region:</p>
+          <ul>
+            <li>HSBC Singapore - <a href="https://www.hsbc.com.sg/" target="_blank">Visit Site</a></li>
+            <li>HSBC Hong Kong - <a href="https://www.hsbc.com.hk/" target="_blank">Visit Site</a></li>
+            <li>HSBC China - <a href="https://www.hsbc.com.cn/" target="_blank">Visit Site</a></li>
+          </ul>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+          <h2>Contact Us Whenever You Want</h2>
+          <p>To better help you, please fill out the form below to get in touch. Required fields are marked with an asterisk (*).</p>
+          <form action="mailto:contactus.me@hsbc.com" method="post" enctype="text/plain">
+            <label for="name">Name: *</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="account">Account:</label><br>
+            <input type="text" id="account" name="account"><br><br>
+            
+            <div class="radio-group">
+                <label> Choose(Premier/One):</label><br>
+                <input type="radio" id="premier" name="account_type" value="Premier"> <label for="premier">Premier</label><br>
+                <input type="radio" id="one" name="account_type" value="One"> <label for="one">One</label><br>
+            </div><br><br>
+
+            <label for="email">Email: *</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </main>
+      
+      <hr>
+      
+      <footer>
+        <p>Copyright © 2025 HSBC Selector. All Rights Reserved.</p>
+        
+        <img src="image.png" alt="HSBC Selector Logo" width="100">
+      </footer>
+    </div>
+  </body>
+</html>
